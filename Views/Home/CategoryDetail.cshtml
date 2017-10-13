@@ -1,0 +1,9 @@
+<h3>Here is your contacts detailed info:</h3>
+<ol>
+@foreach (var contact in @Model["contacts"])
+{
+  <li>@contact.GetDescription()</li>
+}
+</ol>
+<p><a href='/categories/@Model["category"].GetId()/contacts/new'>Add a new contact</a></p>
+<p><a href='/'>Return to Main Page</a></p>

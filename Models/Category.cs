@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace ToDoList.Models
+namespace AddressBook.Models
 {
   public class Category
   {
@@ -9,7 +9,7 @@ namespace ToDoList.Models
      private int _id;
      private List<Contact> _contacts;
 
-     public Category(string Rolodex)
+     public Category(string categoryName)
      {
        _name = categoryName;
        _instances.Add(this);
@@ -41,15 +41,5 @@ namespace ToDoList.Models
      {
        return _instances[searchId-1];
      }
-
-     public List<Contact> GetContacts()
-     {
-       return _contacts;
-     }
-     public void AddContact(Contact contact)
-     {
-       _contacts.Add(contact);
-     }
-
    }
  }
