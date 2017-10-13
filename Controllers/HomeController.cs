@@ -23,7 +23,7 @@ namespace AddressBook.Controllers
             return View(newContact);
         }
 
-        [Route("/ContactList")]
+        [Route("/contactlist")]
         public ActionResult ContactList()
         {
           List<Contact> allContacts = Contact.GetAll();
